@@ -44,7 +44,19 @@ function AppContent() {
     <div>
       <div className="shell">
           <header className="masthead">
-            <Link to="/" className="logo">PropertyHub</Link>
+            <Link to="/" className="logo">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ display: 'inline-block', marginRight: '8px', verticalAlign: 'middle' }}>
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 10 12 6.16-1.26 10-6.45 10-12V7l-10-5z" fill="url(#grad1)"/>
+                <path d="M12 6L7 9v6h2v-4h6v4h2V9l-5-3z" fill="white"/>
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{ stopColor: '#667eea', stopOpacity: 1 }} />
+                    <stop offset="100%" style={{ stopColor: '#764ba2', stopOpacity: 1 }} />
+                  </linearGradient>
+                </defs>
+              </svg>
+              Jual Beli Property
+            </Link>
             <button 
               className="hamburger" 
               onClick={() => setMenuOpen(!menuOpen)}
@@ -86,7 +98,19 @@ function AppContent() {
         <footer className="footer">
           <div className="footer__content">
             <div className="footer__brand">
-              <div className="logo">PropertyHub</div>
+              <div className="logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style={{ display: 'inline-block', marginRight: '6px', verticalAlign: 'middle' }}>
+                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 10 12 6.16-1.26 10-6.45 10-12V7l-10-5z" fill="url(#grad2)"/>
+                  <path d="M12 6L7 9v6h2v-4h6v4h2V9l-5-3z" fill="white"/>
+                  <defs>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{ stopColor: '#60a5fa', stopOpacity: 1 }} />
+                      <stop offset="100%" style={{ stopColor: '#a78bfa', stopOpacity: 1 }} />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Jual Beli Property
+              </div>
               <p>Platform jual beli dan sewa properti terpercaya di Indonesia.</p>
             </div>
             <div className="footer__links">
@@ -113,7 +137,7 @@ function AppContent() {
                 </ul>
               </div>
             </div>
-            <span className="footer__meta">© {new Date().getFullYear()} PropertyHub Indonesia</span>
+            <span className="footer__meta">© {new Date().getFullYear()} Jual Beli Property Indonesia</span>
           </div>
         </footer>
       </div>
