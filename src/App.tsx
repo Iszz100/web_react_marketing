@@ -5,6 +5,7 @@ import ProductDetailPage from './ProductDetailPage'
 
 function AppContent() {
   const [searchQuery, setSearchQuery] = useState('')
+  const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
@@ -20,6 +21,11 @@ function AppContent() {
       // Scroll to top when navigating to a page without hash
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
+  }, [location])
+
+  useEffect(() => {
+    // Close menu when route changes
+    setMenuOpen(false)
   }, [location])
 
   const handleSearch = (e: React.FormEvent) => {
@@ -39,6 +45,20 @@ function AppContent() {
       <div className="shell">
           <header className="masthead">
             <Link to="/" className="logo">PropertyHub</Link>
+            <button 
+              className="hamburger" 
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <nav className={`menu ${menuOpen ? 'is-open' : ''}`}>
+              <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+              <Link to="/#products" onClick={() => setMenuOpen(false)}>Properti</Link>
+              <a href="tel:+6221-555-0123" className="pill-btn">Hubungi Kami</a>
+            </nav>
           <form className="search-form" onSubmit={handleSearch}>
             <input 
               type="search" 
