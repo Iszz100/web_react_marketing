@@ -7,16 +7,16 @@ export const navLinks = [
 ]
 
 export const heroContent = {
-  eyebrow: 'WiFi untuk Bisnis',
-  title: 'Koneksi internet cepat dan stabil untuk mendukung bisnis Anda berkembang.',
+  eyebrow: 'Jual | Sewa Property',
+  title: 'Temukan properti impian Anda dengan harga terbaik dan lokasi strategis.',
   subtitle:
-    'IndiHome Biz WiFi memberikan kecepatan hingga 300 Mbps, support 24/7, dan harga khusus pelanggan korporat. Cocok untuk kantor, cafe, co-working space, hingga retail.',
-  primaryCta: { label: 'Daftar sekarang', href: '#pricing' },
-  secondaryCta: { label: 'Konsultasi gratis', href: '#demo' },
+    'Kami menyediakan berbagai pilihan properti untuk dijual dan disewakan. Rumah, apartemen, ruko, tanah, dan villa dengan lokasi strategis di berbagai kota. Proses cepat, aman, dan terpercaya.',
+  primaryCta: { label: 'Lihat properti', href: '#products' },
+  secondaryCta: { label: 'Hubungi kami', href: '#demo' },
   highlights: [
-    { label: 'Pemasangan 3-7 hari', value: 'Instalasi cepat' },
-    { label: 'Dukungan teknis', value: 'Support 24/7' },
-    { label: 'Gratis survey', value: 'Tanpa biaya awal' },
+    { label: 'Pilihan lengkap', value: '1000+ properti' },
+    { label: 'Lokasi strategis', value: 'Seluruh Indonesia' },
+    { label: 'Proses mudah', value: 'Legal terjamin' },
   ],
 }
 
@@ -138,116 +138,129 @@ export const faqs = [
 
 export const productShowcase = [
   {
-    slug: 'modem-wifi-6-ax1800',
-    name: 'Modem WiFi 6 AX1800',
-    image: 'https://images.unsplash.com/photo-1606904825846-647eb07f5be2?auto=format&fit=crop&w=600&q=70',
-    price: 'Gratis',
-    description: 'Router WiFi 6 dual-band dengan kecepatan hingga 1800 Mbps. Cocok untuk paket Biz Starter dan Pro.',
-    specs: ['WiFi 6 (802.11ax)', '4 port Gigabit LAN', 'Coverage hingga 150m²', 'Support 30+ device'],
+    slug: 'rumah-modern-bsd-city',
+    name: 'Rumah Modern BSD City',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=70',
+    price: 'Rp 2.5M',
+    description: 'Rumah minimalis modern 2 lantai di kawasan BSD City, Tangerang. Lokasi strategis dekat sekolah dan pusat perbelanjaan.',
+    specs: ['Luas Tanah 120m²', 'Luas Bangunan 150m²', '3 Kamar Tidur', '2 Kamar Mandi', 'Carport 2 mobil'],
     detailedDescription: `
-      <h3>Teknologi WiFi 6 Terbaru</h3>
-      <p>Modem WiFi 6 AX1800 menggunakan teknologi 802.11ax generasi terbaru yang memberikan kecepatan hingga 1800 Mbps. Dengan dual-band (2.4GHz + 5GHz), Anda bisa menghubungkan perangkat lama dan baru secara bersamaan tanpa penurunan performa.</p>
+      <h3>Desain Modern Minimalis</h3>
+      <p>Rumah 2 lantai dengan desain arsitektur modern minimalis yang elegan. Interior luas dengan konsep open space untuk ruang keluarga dan dapur. Material berkualitas tinggi dan finishing premium di setiap sudut rumah.</p>
       
-      <h3>Performa Stabil untuk Bisnis</h3>
-      <p>Dilengkapi 4 port Gigabit LAN untuk koneksi kabel yang lebih stabil. Cocok untuk menghubungkan komputer kasir, printer jaringan, atau NAS server. Coverage hingga 150m² mampu menjangkau seluruh area toko atau kantor kecil-menengah.</p>
+      <h3>Lokasi Strategis BSD City</h3>
+      <p>Terletak di kawasan BSD City yang terkenal dengan perencanaan kota terbaik. Akses mudah ke tol Jakarta-Serpong, dekat dengan AEON Mall, ICE BSD, sekolah internasional, dan rumah sakit. Hanya 15 menit ke Bandara Soekarno-Hatta.</p>
       
-      <h3>Support Banyak Device</h3>
-      <p>Teknologi OFDMA dan MU-MIMO memungkinkan router ini melayani hingga 30+ perangkat secara bersamaan. Sempurna untuk bisnis dengan banyak karyawan atau customer yang menggunakan WiFi gratis.</p>
+      <h3>Fasilitas Lengkap</h3>
+      <p>Cluster dengan keamanan 24 jam, taman bermain anak, jogging track, dan masjid. Lingkungan bersih, asri, dan nyaman untuk keluarga. One gate system dengan sistem CCTV di setiap sudut cluster.</p>
       
-      <h3>Fitur Keamanan</h3>
+      <h3>Spesifikasi Detail</h3>
       <ul>
-        <li>WPA3 encryption untuk keamanan maksimal</li>
-        <li>Guest network terpisah untuk pelanggan</li>
-        <li>Parental control dan filtering konten</li>
-        <li>Firewall built-in</li>
+        <li>Luas Tanah: 120m² (8x15 meter)</li>
+        <li>Luas Bangunan: 150m²</li>
+        <li>Kamar Tidur: 3 (1 master bedroom dengan walk-in closet)</li>
+        <li>Kamar Mandi: 2 (1 dengan bathtub)</li>
+        <li>Carport: 2 mobil</li>
+        <li>Listrik: 3300 watt</li>
+        <li>Air: Jetpump + tandon 1000 liter</li>
+        <li>Sertifikat: SHM (Sertifikat Hak Milik)</li>
       </ul>
     `
   },
   {
-    slug: 'router-enterprise-zte-f670l',
-    name: 'Router Enterprise ZTE F670L',
-    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=70',
-    price: 'Gratis',
-    description: 'Router fiber optik untuk paket Enterprise dengan performa tinggi dan manajemen VLAN.',
-    specs: ['Dual-band AC2100', 'GPON ONT integrated', 'QoS & VLAN support', 'Remote management'],
+    slug: 'apartemen-mewah-sudirman',
+    name: 'Apartemen Mewah Sudirman',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=70',
+    price: 'Rp 1.8M',
+    description: 'Apartemen luxury 2BR di jantung kota Jakarta, Sudirman. Fully furnished dengan pemandangan kota yang spektakuler.',
+    specs: ['Luas 68m²', '2 Bedroom', '1 Bathroom', 'Fully Furnished', 'Lantai 25'],
     detailedDescription: `
-      <h3>Router Kelas Enterprise</h3>
-      <p>ZTE F670L adalah router fiber optik dengan ONT (Optical Network Terminal) terintegrasi. Mendukung kecepatan hingga AC2100 (2.4GHz: 300Mbps + 5GHz: 1800Mbps), ideal untuk paket IndiHome Biz Enterprise yang membutuhkan bandwidth tinggi.</p>
+      <h3>Apartemen Premium di Sudirman</h3>
+      <p>Unit apartemen mewah di kawasan bisnis Sudirman dengan akses langsung ke berbagai fasilitas premium. Interior design modern dengan furniture berkelas dan appliances lengkap dari brand ternama. Lantai 25 dengan view kota Jakarta yang menakjubkan.</p>
       
-      <h3>Manajemen VLAN & QoS</h3>
-      <p>Fitur VLAN memungkinkan Anda memisahkan jaringan internal, guest, dan CCTV dalam satu router. QoS (Quality of Service) memastikan prioritas bandwidth untuk aplikasi kritis seperti video conference atau transaksi online.</p>
+      <h3>Fully Furnished Siap Huni</h3>
+      <p>Dilengkapi dengan furniture lengkap: sofa set, meja makan, tempat tidur king size, lemari pakaian, AC di setiap ruangan, smart TV 55 inch, kulkas 2 pintu, mesin cuci, microwave, dan kitchen set lengkap. Anda hanya perlu membawa koper untuk langsung tinggal.</p>
       
-      <h3>Remote Management</h3>
-      <p>Administrator dapat mengakses router dari jarak jauh untuk konfigurasi, troubleshooting, atau monitoring traffic. Sangat berguna untuk bisnis dengan multi-cabang atau IT support eksternal.</p>
+      <h3>Fasilitas Building</h3>
+      <p>Swimming pool infinity rooftop, gym 24 jam dengan peralatan modern, sky lounge, mini market, laundry, restaurant & cafe, business center, dan meeting room. Keamanan 24 jam dengan sistem access card dan CCTV di setiap sudut.</p>
+      
+      <h3>Detail Unit</h3>
+      <ul>
+        <li>Luas: 68m²</li>
+        <li>Kamar Tidur: 2 (master bedroom + guest room)</li>
+        <li>Kamar Mandi: 1 dengan shower premium</li>
+        <li>Balkon: Pemandangan kota Jakarta</li>
+        <li>Lantai: 25 dari 40 lantai</li>
+        <li>Listrik: 3300 watt</li>
+        <li>AC: 3 unit (2 kamar + ruang tamu)</li>
+        <li>Parkir: 1 mobil basement</li>
+      </ul>
+    `
+  },
+  {
+    slug: 'ruko-strategis-gading-serpong',
+    name: 'Ruko Strategis Gading Serpong',
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=600&q=70',
+    price: 'Rp 3.2M',
+    description: 'Ruko 3 lantai di kawasan komersial Gading Serpong. Cocok untuk usaha retail, kantor, atau klinik.',
+    specs: ['Luas Tanah 80m²', 'Luas Bangunan 200m²', '3 Lantai', 'Row jalan 12m', 'Hook position'],
+    detailedDescription: `
+      <h3>Lokasi Komersial Prime</h3>
+      <p>Ruko 3 lantai terletak di kawasan komersial Gading Serpong yang ramai dengan traffic tinggi setiap hari. Posisi hook dengan row jalan 12 meter, sangat strategis untuk berbagai jenis usaha. Akses mudah dari tol Jakarta-Tangerang dan dekat dengan kampus serta perumahan besar.</p>
+      
+      <h3>Bangunan Siap Pakai</h3>
+      <p>Kondisi bangunan terawat dan siap untuk digunakan. Lantai 1 cocok untuk showroom atau retail dengan ceiling tinggi 5 meter. Lantai 2 dan 3 bisa untuk kantor atau gudang. Sudah ada 3 kamar mandi, 2 AC, dan instalasi listrik 7700 watt.</p>
+      
+      <h3>Investasi Menguntungkan</h3>
+      <p>Area Gading Serpong terus berkembang pesat dengan banyak pembangunan mal, kampus, dan perumahan baru. Nilai properti komersial di area ini meningkat 10-15% per tahun. Bisa untuk usaha sendiri atau disewakan dengan ROI menarik.</p>
       
       <h3>Spesifikasi Lengkap</h3>
       <ul>
-        <li>GPON ONT class C+ integrated</li>
-        <li>4 port Gigabit LAN + 2 port POTS</li>
-        <li>IPv6 ready</li>
-        <li>TR-069 remote management protocol</li>
-        <li>Dual-band concurrent (2.4GHz + 5GHz)</li>
+        <li>Luas Tanah: 80m² (5x16 meter)</li>
+        <li>Luas Bangunan: 200m² (total 3 lantai)</li>
+        <li>Posisi: Hook dengan 2 muka jalan</li>
+        <li>Row Jalan: 12 meter (jalan utama)</li>
+        <li>Lantai 1: 70m² (ceiling 5m untuk showroom)</li>
+        <li>Lantai 2: 65m²</li>
+        <li>Lantai 3: 65m²</li>
+        <li>Kamar Mandi: 3 unit</li>
+        <li>Listrik: 7700 watt</li>
+        <li>Parkir: Depan ruko (3-4 mobil)</li>
+        <li>Sertifikat: SHM (Sertifikat Hak Milik)</li>
       </ul>
     `
   },
   {
-    slug: 'wifi-mesh-system-3-pack',
-    name: 'WiFi Mesh System (3-pack)',
-    image: 'https://images.unsplash.com/photo-1622831914140-c1cee2f9c5b4?auto=format&fit=crop&w=600&q=70',
-    price: '+Rp250rb/bulan',
-    description: 'Sistem WiFi mesh 3 unit untuk coverage area luas hingga 450m². Ideal untuk kantor bertingkat atau cafe besar.',
-    specs: ['Coverage 450m²', 'Seamless roaming', 'Auto channel optimization', 'Centralized management'],
+    slug: 'tanah-kavling-bogor',
+    name: 'Tanah Kavling Siap Bangun Bogor',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=70',
+    price: 'Rp 800Jt',
+    description: 'Kavling tanah siap bangun di kawasan Sentul City, Bogor. Lokasi sejuk dengan view pegunungan.',
+    specs: ['Luas 200m²', 'SHM', 'Listrik tersedia', 'Akses jalan 8m', 'View pegunungan'],
     detailedDescription: `
-      <h3>Coverage Luas dengan Mesh Technology</h3>
-      <p>WiFi Mesh System terdiri dari 3 unit yang saling terhubung membentuk satu jaringan besar. Setiap unit mampu meng-cover 150m², sehingga total coverage mencapai 450m². Cocok untuk kantor bertingkat, cafe dengan outdoor area, atau co-working space.</p>
+      <h3>Lokasi Premium Sentul City</h3>
+      <p>Kavling tanah seluas 200m² di kawasan Sentul City, Bogor. Area yang terus berkembang dengan banyak cluster perumahan elite dan fasilitas lengkap. Udara sejuk pegunungan dengan suhu rata-rata 24°C, sempurna untuk hunian keluarga yang ingin menghindari polusi kota.</p>
       
-      <h3>Seamless Roaming</h3>
-      <p>Perangkat Anda akan otomatis pindah ke access point terdekat tanpa putus koneksi. Tidak ada lagi "WiFi zone" yang lemah atau harus manual ganti jaringan saat pindah ruangan.</p>
+      <h3>Siap Bangun</h3>
+      <p>Tanah sudah diratakan dan siap untuk dibangun. Akses jalan beraspal 8 meter, listrik PLN tersedia, dan air PAM sudah masuk ke area. Tidak ada banjir dan tanah stabil untuk fondasi. Sudah ada tetangga yang membangun rumah di sekitar kavling.</p>
       
-      <h3>Auto Channel Optimization</h3>
-      <p>Sistem akan otomatis memilih channel WiFi terbaik untuk meminimalkan interference dari jaringan tetangga. Self-healing technology memastikan jaringan tetap stabil meskipun salah satu unit mati.</p>
+      <h3>View & Lingkungan</h3>
+      <p>Pemandangan langsung ke pegunungan Salak yang hijau dan asri. Lingkungan tenang, bersih, dan aman. Dekat dengan sekolah internasional, rumah sakit, dan mal Sentul City. Hanya 45 menit ke Jakarta via tol Jagorawi.</p>
       
-      <h3>Centralized Management</h3>
-      <p>Kelola semua access point dari satu dashboard. Fitur yang tersedia:</p>
+      <h3>Detail Kavling</h3>
       <ul>
-        <li>Real-time monitoring device yang terkoneksi</li>
-        <li>Bandwidth usage per device</li>
-        <li>Guest network dengan portal login custom</li>
-        <li>Scheduled WiFi on/off untuk hemat listrik</li>
-        <li>Mobile app untuk management dari smartphone</li>
-      </ul>
-    `
-  },
-  {
-    slug: 'ip-pbx-telephony-kit',
-    name: 'IP PBX Telephony Kit',
-    image: 'https://images.unsplash.com/photo-1577563908411-5077b6dc7624?auto=format&fit=crop&w=600&q=70',
-    price: '+Rp150rb/bulan',
-    description: 'Paket telepon kantor IP PBX dengan 5 ekstensi. Bisa tambah nomor sesuai kebutuhan.',
-    specs: ['5 extension lines', 'Call forwarding & hold', 'Voicemail & IVR', 'Mobile app integration'],
-    detailedDescription: `
-      <h3>Sistem Telepon Kantor Modern</h3>
-      <p>IP PBX Telephony Kit mengubah jaringan internet Anda menjadi sistem telepon kantor profesional. Paket dasar sudah termasuk 5 extension lines yang bisa ditempatkan di meja resepsionis, customer service, atau manajemen.</p>
-      
-      <h3>Fitur Call Management</h3>
-      <p>Call forwarding memungkinkan pengalihan panggilan ke nomor lain jika tidak tersedia. Call hold untuk menahan panggilan saat mencari informasi. Call transfer untuk memindahkan panggilan antar ekstensi.</p>
-      
-      <h3>Voicemail & IVR</h3>
-      <p>Voicemail akan merekam pesan otomatis jika tidak ada yang angkat. IVR (Interactive Voice Response) memberikan menu suara otomatis: "Tekan 1 untuk sales, tekan 2 untuk support". Membuat bisnis kecil terlihat lebih profesional.</p>
-      
-      <h3>Mobile App Integration</h3>
-      <p>Karyawan bisa terima telepon kantor dari smartphone pribadi. Aplikasi mobile tersedia untuk Android dan iOS, mendukung fitur lengkap seperti call history, contact directory, dan conference call.</p>
-      
-      <h3>Paket Include:</h3>
-      <ul>
-        <li>IP PBX server (bisa virtual atau hardware)</li>
-        <li>5 IP phone handset</li>
-        <li>Konfigurasi dan instalasi awal</li>
-        <li>Training penggunaan dasar</li>
-        <li>Support teknis via telepon/chat</li>
+        <li>Luas Tanah: 200m² (10x20 meter)</li>
+        <li>Sertifikat: SHM (Sertifikat Hak Milik) atas nama perorangan</li>
+        <li>Kontur: Tanah datar, tidak miring</li>
+        <li>Akses Jalan: 8 meter beraspal</li>
+        <li>Listrik: Token PLN 2200 watt tersedia</li>
+        <li>Air: PAM & sumur bor tersedia</li>
+        <li>Posisi: Tengah cluster dengan keamanan 24 jam</li>
+        <li>IMB: Bisa langsung diurus</li>
+        <li>KDB: 60% (bisa bangun 120m²)</li>
       </ul>
       
-      <p><strong>Catatan:</strong> Bisa tambah ekstensi tambahan dengan biaya Rp30rb/bulan per ekstensi.</p>
+      <p><strong>Bonus:</strong> Free pengurusan IMB dan konsultasi desain rumah gratis dari developer.</p>
     `
   }
 ]

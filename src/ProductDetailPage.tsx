@@ -35,11 +35,11 @@ function ProductDetailPage() {
             </div>
 
             <div className="action-row">
-              <a className="btn solid" href="#pricing">
-                Pesan Sekarang
+              <a className="btn solid" href="tel:+6221-555-0123">
+                Hubungi Kami
               </a>
-              <a className="btn ghost" href="tel:147">
-                Hubungi 147
+              <a className="btn ghost" href="https://wa.me/6281234567890">
+                WhatsApp
               </a>
             </div>
           </div>
@@ -51,13 +51,13 @@ function ProductDetailPage() {
 
         <div className="product-detail__cta">
           <h2>Tertarik dengan {product.name}?</h2>
-          <p>Hubungi tim sales kami untuk konsultasi gratis dan penawaran khusus untuk bisnis Anda.</p>
+          <p>Hubungi tim kami untuk survei lokasi gratis dan konsultasi pembelian properti.</p>
           <div className="action-row">
-            <a className="btn solid" href="mailto:bisnis@indihome.co.id">
+            <a className="btn solid" href="mailto:info@propertyhub.id">
               Email Kami
             </a>
             <Link className="btn ghost" to="/">
-              Lihat Produk Lain
+              Lihat Properti Lain
             </Link>
           </div>
         </div>
