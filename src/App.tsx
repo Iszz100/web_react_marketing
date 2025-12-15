@@ -2,11 +2,13 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 import { useState, useEffect } from 'react'
 import HomePage from './HomePage'
 import ProductDetailPage from './ProductDetailPage'
+import useProducts from './useProducts'
 
 function AppContent() {
   const [searchQuery, setSearchQuery] = useState('')
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const productsState = useProducts()
 
   useEffect(() => {
     // Handle hash navigation
@@ -89,8 +91,8 @@ function AppContent() {
 
         <main className="stack">
           <Routes>
-            <Route path="/" element={<HomePage searchQuery={searchQuery} />} />
-            <Route path="/produk/:slug" element={<ProductDetailPage />} />
+            <Route path="/" element={<HomePage searchQuery={searchQuery} {...productsState} />} />
+            <Route path="/produk/:slug" element={<ProductDetailPage {...productsState} />} />
           </Routes>
         </main>
         </div>

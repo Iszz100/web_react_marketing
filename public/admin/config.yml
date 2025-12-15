@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Tambah {{collection}} '{{slug}}'"
+    update: "Update {{collection}} '{{slug}}'"
+    delete: "Hapus {{collection}} '{{slug}}'"
+    uploadMedia: "Upload media: {{path}}"
+    deleteMedia: "Hapus media: {{path}}"
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
+i18n:
+  structure: single_file
+
+collections:
+  - name: products
+    label: Properti
+    label_singular: Properti
+    description: Kelola daftar "Properti Pilihan Terbaik" yang tampil di homepage.
+    files:
+      - file: public/data/products.json
+        name: items
+        label: Daftar Properti
+        format: json
+        fields:
+          - label: Properti
+            name: items
+            widget: list
+            summary: "{{fields.name}} — {{fields.price}}"
+            fields:
+              - { label: Slug, name: slug, widget: string, hint: "Dipakai untuk URL, contoh: rumah-modern-bsd-city" }
+              - { label: Nama, name: name, widget: string }
+              - { label: Gambar, name: image, widget: string, hint: "URL gambar (gunakan https)" }
+              - { label: Harga, name: price, widget: string, hint: "Contoh: Rp 2.5M" }
+              - { label: Deskripsi Singkat, name: description, widget: text }
+              - label: Spesifikasi
+                name: specs
+                widget: list
+                field:
+                  label: Item
+                  name: spec
+                  widget: string
+              - { label: Deskripsi Detail (HTML/Markdown), name: detailedDescription, widget: markdown }

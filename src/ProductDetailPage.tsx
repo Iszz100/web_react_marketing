@@ -1,12 +1,34 @@
-import { useParams, Link, Navigate } from 'react-router-dom'
-import { productShowcase } from './data'
+import { useParams, Link } from 'react-router-dom'
+import { useMemo } from 'react'
+import type { Product } from './useProducts'
 
-function ProductDetailPage() {
+interface ProductDetailPageProps {
+  products: Product[]
+  loading: boolean
+  error: string | null
+}
+
+function ProductDetailPage({ products, loading, error }: ProductDetailPageProps) {
   const { slug } = useParams<{ slug: string }>()
-  const product = productShowcase.find((p) => p.slug === slug)
+  const product = useMemo(() => products.find((p) => p.slug === slug), [products, slug])
+
+  if (loading) {
+    return (
+      <section className="product-detail" style={{ textAlign: 'center', padding: '64px 24px' }}>
+        <p style={{ fontSize: '1.2rem', color: 'var(--muted)' }}>⏳ Memuat detail properti...</p>
+      </section>
+    )
+  }
 
   if (!product) {
-    return <Navigate to="/" replace />
+    return (
+      <section className="product-detail" style={{ textAlign: 'center', padding: '64px 24px' }}>
+        <p style={{ fontSize: '1.2rem', marginBottom: '12px' }}>
+          {error ? '⚠️ Data properti tidak bisa dimuat' : 'Properti tidak ditemukan'}
+        </p>
+        <Link to="/" className="btn solid">Kembali ke Home</Link>
+      </section>
+    )
   }
 
   return (

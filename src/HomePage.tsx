@@ -1,22 +1,26 @@
 import { Link } from 'react-router-dom'
 import { useMemo } from 'react'
-import { heroContent, productShowcase } from './data'
+import { heroContent } from './data'
+import type { Product } from './useProducts'
 
 interface HomePageProps {
   searchQuery: string
+  products: Product[]
+  loading: boolean
+  error: string | null
 }
 
-function HomePage({ searchQuery }: HomePageProps) {
+function HomePage({ searchQuery, products, loading, error }: HomePageProps) {
   const filteredProducts = useMemo(() => {
-    if (!searchQuery.trim()) return productShowcase
+    if (!searchQuery.trim()) return products
     
     const query = searchQuery.toLowerCase().trim()
-    return productShowcase.filter(product => 
+    return products.filter(product => 
       product.name.toLowerCase().includes(query) ||
       product.description.toLowerCase().includes(query) ||
       product.specs.some(spec => spec.toLowerCase().includes(query))
     )
-  }, [searchQuery])
+  }, [searchQuery, products])
 
   return (
     <>
@@ -73,7 +77,12 @@ function HomePage({ searchQuery }: HomePageProps) {
             </p>
           )}
         </div>
-        {filteredProducts.length > 0 ? (
+        {loading ? (
+          <div style={{ textAlign: 'center', padding: '48px 24px', color: 'var(--muted)' }}>
+            <p style={{ fontSize: '1.1rem', marginBottom: '12px' }}>⏳ Memuat data properti...</p>
+            <p>Silakan tunggu sebentar.</p>
+          </div>
+        ) : filteredProducts.length > 0 ? (
           <div className="products__grid">
             {filteredProducts.map((product) => (
             <Link 
@@ -100,8 +109,14 @@ function HomePage({ searchQuery }: HomePageProps) {
             padding: '48px 24px',
             color: 'var(--muted)'
           }}>
-            <p style={{ fontSize: '1.1rem', marginBottom: '12px' }}>🔍 Properti tidak ditemukan</p>
-            <p>Coba kata kunci lain seperti "rumah", "apartemen", "BSD", atau "Sudirman"</p>
+            <p style={{ fontSize: '1.1rem', marginBottom: '12px' }}>
+              {error ? '⚠️ Tidak bisa memuat data terbaru' : '🔍 Properti tidak ditemukan'}
+            </p>
+            <p>
+              {error
+                ? 'Menampilkan data bawaan. Coba refresh atau buka kembali nanti.'
+                : 'Coba kata kunci lain seperti "rumah", "apartemen", "BSD", atau "Sudirman"'}
+            </p>
           </div>
         )}
       </section>
