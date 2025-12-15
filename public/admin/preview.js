@@ -17,11 +17,13 @@ const ProductPreview = ({ entry }) => {
       const image = item.get('image') || ''
       const description = item.get('description') || ''
       const specs = item.get('specs') || List()
+      const slug = item.get('slug') || 'slug-belum-ada'
 
       return React.createElement(
         'div',
         { key: idx, className: 'preview-card' },
         [
+          React.createElement('span', { key: 'badge', className: 'preview-badge' }, slug),
           React.createElement('img', {
             key: 'img',
             src: image,
@@ -35,9 +37,11 @@ const ProductPreview = ({ entry }) => {
           React.createElement('div', { key: 'price', className: 'preview-card__price' }, price),
           React.createElement('p', { key: 'desc', className: 'preview-card__desc' }, description),
           React.createElement(
-            'ul',
+            'div',
             { key: 'specs', className: 'preview-card__specs' },
-            specs.map((spec, sIdx) => React.createElement('li', { key: sIdx }, spec))
+            specs.map((spec, sIdx) =>
+              React.createElement('span', { key: sIdx, className: 'preview-chip' }, spec)
+            )
           ),
         ]
       )
