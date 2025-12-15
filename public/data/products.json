@@ -58,7 +58,19 @@
         "Akses jalan 8m",
         "View pegunungan"
       ],
-      "detailedDescription": "\n      <h3>Lokasi Premium Sentul City</h3>\n      <p>Kavling tanah seluas 200m² di kawasan Sentul City, Bogor. Area yang terus berkembang dengan banyak cluster perumahan elite dan fasilitas lengkap. Udara sejuk pegunungan dengan suhu rata-rata 24°C, sempurna untuk hunian keluarga yang ingin menghindari polusi kota.</p>\n      \n      <h3>Siap Bangun</h3>\n      <p>Tanah sudah diratakan dan siap untuk dibangun. Akses jalan beraspal 8 meter, listrik PLN tersedia, dan air PAM sudah masuk ke area. Tidak ada banjir dan tanah stabil untuk fondasi. Sudah ada tetangga yang membangun rumah di sekitar kavling.</p>\n      \n      <h3>View & Lingkungan</h3>\n      <p>Pemandangan langsung ke pegunungan Salak yang hijau dan asri. Lingkungan tenang, bersih, dan aman. Dekat dengan sekolah internasional, rumah sakit, dan mal Sentul City. Hanya 45 menit ke Jakarta via tol Jagorawi.</p>\n      \n      <h3>Detail Kavling</h3>\n      <ul>\n        <li>Luas Tanah: 200m² (10x20 meter)</li>\n        <li>Sertifikat: SHM (Sertifikat Hak Milik) atas nama perorangan</li>\n        <li>Kontur: Tanah datar, tidak miring</li>\n        <li>Akses Jalan: 8 meter beraspal</li>\n        <li>Listrik: Token PLN 2200 watt tersedia</li>\n        <li>Air: PAM & sumur bor tersedia</li>\n        <li>Posisi: Tengah cluster dengan keamanan 24 jam</li>\n        <li>IMB: Bisa langsung diurus</li>\n        <li>KDB: 60% (bisa bangun 120m²)</li>\n      </ul>\n      \n      <p><strong>Bonus:</strong> Free pengurusan IMB dan konsultasi desain rumah gratis dari developer.</p>\n    "
+      "detailedDescription": "\n\n```\n  <h3>Lokasi Premium Sentul City</h3>\n  <p>Kavling tanah seluas 200m² di kawasan Sentul City, Bogor. Area yang terus berkembang dengan banyak cluster perumahan elite dan fasilitas lengkap. Udara sejuk pegunungan dengan suhu rata-rata 24°C, sempurna untuk hunian keluarga yang ingin menghindari polusi kota.</p>\n  \n  <h3>Siap Bangun</h3>\n  <p>Tanah sudah diratakan dan siap untuk dibangun. Akses jalan beraspal 8 meter, listrik PLN tersedia, dan air PAM sudah masuk ke area. Tidak ada banjir dan tanah stabil untuk fondasi. Sudah ada tetangga yang membangun rumah di sekitar kavling.</p>\n  \n  <h3>View & Lingkungan</h3>\n  <p>Pemandangan langsung ke pegunungan Salak yang hijau dan asri. Lingkungan tenang, bersih, dan aman. Dekat dengan sekolah internasional, rumah sakit, dan mal Sentul City. Hanya 45 menit ke Jakarta via tol Jagorawi.</p>\n  \n  <h3>Detail Kavling</h3>\n  <ul>\n    <li>Luas Tanah: 200m² (10x20 meter)</li>\n    <li>Sertifikat: SHM (Sertifikat Hak Milik) atas nama perorangan</li>\n    <li>Kontur: Tanah datar, tidak miring</li>\n    <li>Akses Jalan: 8 meter beraspal</li>\n    <li>Listrik: Token PLN 2200 watt tersedia</li>\n    <li>Air: PAM & sumur bor tersedia</li>\n    <li>Posisi: Tengah cluster dengan keamanan 24 jam</li>\n    <li>IMB: Bisa langsung diurus</li>\n    <li>KDB: 60% (bisa bangun 120m²)</li>\n  </ul>\n  \n  <p><strong>Bonus:</strong> Free pengurusan IMB dan konsultasi desain rumah gratis dari developer.</p>\n```"
+    },
+    {
+      "slug": "tanah-masangan-sidoarjo",
+      "name": "Tanah Masangan Wetan",
+      "image": "/uploads/beranda-1-.png",
+      "price": "RP 500.000.000",
+      "description": "Rumah Kosong Masangan Wetan",
+      "specs": [
+        "Luas 100m",
+        "Lantai 2"
+      ],
+      "detailedDescription": "\\### Lokasi Strategis\n\nBerada di Masangan Wetan, Sidoarjo. Akses mobil, 10 menit ke tol Sidoarjo, dekat pasar, sekolah, dan minimarket.\n\n\n\n\\### Kondisi Lahan\n\nTanah siap bangun, kontur datar, lebar depan ideal untuk rumah/kos/ruang usaha kecil.\n\n\n\n\\### Fasilitas Sekitar\n\n\\- Jalan lingkungan lebar, akses mobil.\n\n\\- Listrik dan air PAM/sumur tersedia.\n\n\\- Lingkungan tenang, hunian campur usaha ringan.\n\n\n\n\\### Potensi Bangun\n\n\\- Cocok untuk rumah 2 lantai atau kos kecil.\n\n\\- Luas tanah: 100m².\n\n\\- Zona bangun fleksibel, konsultasi IMB bisa dibantu.\n\n\n\n\\*\\*Catatan:\\*\\* Harga nego tipis, survei lokasi bisa janji temu."
     }
   ]
 }
