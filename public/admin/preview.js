@@ -5,47 +5,73 @@ const ProductPreview = ({ entry }) => {
   const items = entry.getIn(['data', 'items']) || List()
 
   if (!items.size) {
-    return React.createElement('p', { style: { color: '#6b7280' } }, 'Belum ada properti.')
+    return React.createElement('p', { className: 'preview-empty' }, 'Belum ada properti.')
   }
 
   return React.createElement(
-    'div',
-    { className: 'preview-grid' },
-    items.map((item, idx) => {
-      const name = item.get('name') || 'Tanpa nama'
-      const price = item.get('price') || '-'
-      const image = item.get('image') || ''
-      const description = item.get('description') || ''
-      const specs = item.get('specs') || List()
-      const slug = item.get('slug') || 'slug-belum-ada'
+    'table',
+    { className: 'preview-table' },
+    [
+      React.createElement(
+        'thead',
+        { key: 'head' },
+        React.createElement(
+          'tr',
+          null,
+          [
+            React.createElement('th', { key: 'foto' }, 'Foto'),
+            React.createElement('th', { key: 'nama' }, 'Nama'),
+            React.createElement('th', { key: 'harga' }, 'Harga'),
+            React.createElement('th', { key: 'slug' }, 'Slug'),
+            React.createElement('th', { key: 'specs' }, 'Spesifikasi'),
+          ]
+        )
+      ),
+      React.createElement(
+        'tbody',
+        { key: 'body' },
+        items.map((item, idx) => {
+          const name = item.get('name') || 'Tanpa nama'
+          const price = item.get('price') || '-'
+          const image = item.get('image') || ''
+          const specs = item.get('specs') || List()
+          const slug = item.get('slug') || 'slug-belum-ada'
 
-      return React.createElement(
-        'div',
-        { key: idx, className: 'preview-card' },
-        [
-          React.createElement('span', { key: 'badge', className: 'preview-badge' }, slug),
-          React.createElement('img', {
-            key: 'img',
-            src: image,
-            alt: name,
-            className: 'preview-card__image',
-            onError: (e) => {
-              e.target.style.display = 'none'
-            },
-          }),
-          React.createElement('div', { key: 'title', className: 'preview-card__title' }, name),
-          React.createElement('div', { key: 'price', className: 'preview-card__price' }, price),
-          React.createElement('p', { key: 'desc', className: 'preview-card__desc' }, description),
-          React.createElement(
-            'div',
-            { key: 'specs', className: 'preview-card__specs' },
-            specs.map((spec, sIdx) =>
-              React.createElement('span', { key: sIdx, className: 'preview-chip' }, spec)
-            )
-          ),
-        ]
-      )
-    })
+          return React.createElement(
+            'tr',
+            { key: idx },
+            [
+              React.createElement(
+                'td',
+                { key: 'img' },
+                React.createElement('img', {
+                  src: image,
+                  alt: name,
+                  className: 'preview-thumb',
+                  onError: (e) => {
+                    e.target.style.display = 'none'
+                  },
+                })
+              ),
+              React.createElement('td', { key: 'name', className: 'preview-name' }, name),
+              React.createElement('td', { key: 'price', className: 'preview-price' }, price),
+              React.createElement('td', { key: 'slug', className: 'preview-slug' }, slug),
+              React.createElement(
+                'td',
+                { key: 'specs' },
+                React.createElement(
+                  'div',
+                  { className: 'preview-specs' },
+                  specs.map((spec, sIdx) =>
+                    React.createElement('span', { key: sIdx, className: 'preview-chip' }, spec)
+                  )
+                )
+              ),
+            ]
+          )
+        })
+      ),
+    ]
   )
 }
 
