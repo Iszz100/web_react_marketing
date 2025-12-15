@@ -9,6 +9,26 @@
   </head>
   <body>
     <div id="root"></div>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      const hasInvite = window.location.hash && window.location.hash.includes('invite_token')
+
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (hasInvite) {
+            window.netlifyIdentity.open('signup')
+          }
+
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              if (hasInvite) {
+                window.location.href = '/admin/'
+              }
+            })
+          }
+        })
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
