@@ -15,9 +15,6 @@ public_folder: "/uploads"
 
 publish_mode: editorial_workflow
 
-i18n:
-  structure: single_file
-
 collections:
   - name: products
     label: Properti
