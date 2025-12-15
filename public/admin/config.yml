@@ -33,7 +33,14 @@ collections:
             fields:
               - { label: Slug, name: slug, widget: string, hint: "Dipakai untuk URL, contoh: rumah-modern-bsd-city" }
               - { label: Nama, name: name, widget: string }
-              - { label: Gambar, name: image, widget: string, hint: "URL gambar (gunakan https)" }
+              - label: Gambar
+                name: image
+                widget: image
+                choose_url: false
+                media_library:
+                  config:
+                    multiple: false
+                hint: "Upload file gambar dari komputer (akan disimpan di /public/uploads)"
               - { label: Harga, name: price, widget: string, hint: "Contoh: Rp 2.5M" }
               - { label: Deskripsi Singkat, name: description, widget: text }
               - label: Spesifikasi
